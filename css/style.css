@@ -22,7 +22,6 @@
 .header__redLine {
     position: fixed;
     overflow: hidden;
-    max-width: 420px;
     width: 100%;
     white-space: nowrap;
     color: white;
