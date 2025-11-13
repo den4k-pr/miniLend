@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=League+Gothic&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.header {
+    background-image: url(../images/fon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    padding: 40px 10px 0 10px;
+}
+
+.stars-first {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.header__redLine {
+    position: fixed;
+    overflow: hidden;
+    max-width: 420px;
+    width: 100%;
+    white-space: nowrap;
+    color: white;
+    padding: 8px 0;
+    z-index: 99;
+    top: 0;
+    margin: 0 auto;
+    display: flex;
+    padding: 10px 5px;
+    box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.95);
+    background: linear-gradient(90deg, #f31818 0%, #670202 100%);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__redLine-track {
+    display: inline-flex;
+    align-items: flex-end;
+    gap: 20px;
+    animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
+.header__redLine-item {
+    align-items: center;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 121%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+
+.header-underTitle {
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 103%;
+    padding-top: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+
+.header-title {
+    font-family: 'SONGER Condensed';
+    background-image: url(../images/title-shadow.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    padding: 20px;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 118%;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+@media(max-width: 420px) {
+    .header-title{
+        font-size: 40px;
+    }
+}
+
+@media(max-width: 360px) {
+    .header-title{
+        font-size: 36px;
+    }
+}
+
+
+.header-title span {
+
+    background: linear-gradient(181deg, #000 0%, #eb0004 50%, #eb0004 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.47);
+}
+
+.header__infoBox {
+    position: relative;
+    border-radius: 27px;
+    width: 212px;
+    height: 135px;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background: linear-gradient(308deg, rgba(0, 0, 0, 0.2) 0%, rgba(36, 36, 36, 0.2) 100%);
+    border: 1px solid #929292;
+}
+
+.header__infoBox-infoImg {
+    width: 136px;
+    height: 88px;
+    position: absolute;
+    top: -60px;
+    margin: 0 auto;
+}
+
+.header__infoBox-giftI0mg {
+    width: 81px;
+    height: 81px;
+    position: absolute;
+    bottom: -40px;
+    right: -30px;
+}
+
+.info-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 121%;
+    text-align: center;
+    color: #fff;
+    font-family: 'Manrope';
+}
+
+.info-text span {
+    font-weight: 700;
+    color: #f00;
+}
+
+.first-h{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+}
+
+.second-h{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.header-button{
+    font-family: var(--third-family);
+    font-family: 'SONGER Condensed';
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 163%;
+    height: 88px;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 200px;
+    max-width: 320px;
+    width: 100%;
+    border-top: 1px solid #b6b6b6;
+    border-right: 1.5px solid #b6b6b6;
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    margin: 0 auto;
+    z-index: 2;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(90deg, #340000d4 0%, #700806ba 50%, #310706c2 100%);
+}
+
+
+
+.main{
+    padding: 0 10px;
+}
+
+.mainTitle{
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 118%;
+    text-transform: uppercase;
+    font-family: 'SONGER Condensed';
+    text-align: center;
+    text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.47);
+    position: relative;
+    z-index: 3;
+}
+
+
+.whyList{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.whyList img{
+    width: 100%;
+}
+
+
+.explain{
+    padding-top: 50px;
+    margin-top: 50px;
+    padding-bottom: 70px;
+    position: relative;
+}
+
+.fon-second{
+    position: absolute;
+    top: 0;
+    right: -12px;
+    z-index: 1;
+}
+
+.explainInfo{
+    position: relative;
+    z-index: 2;
+    margin-top: 0px;
+    border-radius: 32px;
+    padding: 15px;
+    box-shadow: 0 4px 84px 0 rgba(255, 0, 0, 0.35);
+    background: linear-gradient(224deg, #2f0000 0%, #1b0000 50%, #410404 100%);
+    border-top: 1px solid #EC0000;
+    border-right: 1px solid #EC0000;
+    margin-top: 20px;
+}
+
+.explainInfo-item{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.explainInfo-item-number{
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 168%;
+    text-transform: uppercase;
+    background: linear-gradient(177deg, #000 0%, #ff0505 70.67%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: inset 0 4px 4px 0 rgba(0, 0, 0, 0.38);
+}
+
+.explainInfo-item-value{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 135%;
+    color: #fff;
+}
+
+.explainInfo-icon{
+    margin-left: auto;
+}
+
+
+
+
+.contacts{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #f33918;
+}
+footer{
+    padding: 30px 10px;
+}
+.footer{
+    background-image: url(../images/footer-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 40px;
+    padding: 35px 40px;
+    margin-bottom: 30px;
+}
+
+.footer-title{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 121%;
+    text-transform: uppercase;
+    color: #fff;
+    padding-bottom: 10px;
+    max-width: 310px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.footer-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 121%;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    padding-top: 25px;
+}
+
+.footer-media{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-top: 20px;
+}
+
+.footer-media-item{
+    cursor: pointer;
+    border: 1px solid #f33918;
+    border-radius: 10px;
+    width: 138px;
+    height: 78px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: all .2s;
+}
+
+.footer-media-item:active{
+    background-color: #3f3f3f;
+}
+
+.footer-timer {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    padding: 15px 0;
+}
+
+.footer-timer-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.footer-timer-value {
+    border-radius: 150px;
+    width: 67px;
+    height: 38px;
+    background-color: #fff;
+    color: #000;
+    font-family: "League Gothic", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 117%;
+    text-align: center;
+}
+
+.footer-timer-time {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+
+.popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    z-index: 9;
+    cursor: pointer;
+    background-color: #000000b5;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.popup.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.timeLine{
+    max-width: 260px;
+    width: 100%;
+    margin: -15px auto 0 auto;
+}
+
+.close{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    top: 30px;
+    right: 30px;
+}
+
+.popupContent{
+    max-width: 380px;
+    cursor: initial;
+    position: relative;
+    background: linear-gradient(180deg, #4b1919 0%, #191919 100%);
+    border: 3px solid #b12a1f;
+    border-radius: 40px;
+    padding: 20px;
+}
+
+.popupTextSecond{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.popupText{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 100%;
+    text-align: center;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.popupForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 0;
+}
+
+.popupForm input{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    padding-left: 15px;
+    color: #7f7f7f;
+    border-radius: 121px;
+    width: 268px;
+    height: 45px;
+    background: #fffbfb;
+}
+
+.popupForm button{
+    font-weight: 500;
+    font-size: 36px;
+    font-family: 'SONGER Condensed';
+    line-height: 61%;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 200px;
+    width: 268px;
+    height: 58px;
+    background: linear-gradient(30deg, #f00 0%, #00000091 100%);
+}
