@@ -8,7 +8,7 @@
     background-position: right;
     position: relative;
     overflow: hidden;
-    height: 100vh;
+    min-height: 115vh;
     padding: 40px 10px 0 10px;
 }
 
@@ -440,25 +440,25 @@ footer{
     background: linear-gradient(180deg, #4b1919 0%, #191919 100%);
     border: 3px solid #b12a1f;
     border-radius: 40px;
-    padding: 20px;
+    padding: 10px 20px;
 }
 
 .popupTextSecond{
     display: flex;
     align-items: center;
     gap: 10px;
-    padding: 15px 0;
+    padding: 0 0 15px 0;
     justify-content: center;
     align-items: center;
 }
 
 .popupText{
     font-weight: 500;
-    font-size: 15px;
+    font-size: 13px;
     line-height: 100%;
     text-align: center;
     color: #fff;
-    padding: 10px 0;
+    padding: 7px 0;
 }
 
 .popupForm{
@@ -493,4 +493,7 @@ footer{
     width: 268px;
     height: 58px;
     background: linear-gradient(30deg, #f00 0%, #00000091 100%);
+
 }
+
+
